@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fdd870ea48.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<style>
+.container{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+
+}
+.col-1{
+  flex-basis:50%;
+  flex-grow:1;
+  background: url(Image/img27.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height:inherit;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color:#fff;
+}
+.logo{
+    width:100px;
+    margin-bottom: 30px;
+}
+.col-2{
+    flex-basis:50%;
+    flex-grow:1;
+}
+.col-2 h2{
+    font-weight:600;
+    /* display:flex; */
+    text-align:center ;
+    margin-bottom:50px;
+    margin-top:-3px;
+    font-size:30px;
+}
+.col-1 ul{
+    margin-top:22%;
+    /* list-style: none; */
+}
+.col-1 ul li{
+    display:flex;
+    align-items: center;
+    margin:20px 0;
+    margin-left:18%;
+    color: black;
+} 
+form{
+    width:400px;
+    color:#333;
+    font-weight: 500;
+    font-size:14px;
+    margin-left:180px;
+}
+label{
+    display:block;
+    padding:13px;
+    margin-bottom:30px;
+    margin-left:5px;
+    box-shadow: 0 0 20px 5px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    font-size:17px;
+    font-weight: 500;
+    color:black;
+    cursor:pointer;
+}
+label span{
+  flex:1;
+  margin-left:15px;
+  font-size:30px;
+  font-weight:550;
+  color:#333
+}
+label span small{
+    font-size:15px;
+}
+input[type="radio"]:checked + span{
+    color:#ff004f
+}
+input[type="text"],input[type="email"]{
+    width:80%;
+    background: transparent;
+    padding:8px 10px;
+    outline:none;
+    border:3px solid #333;
+    border-radius:4px;
+    margin:12px 0; 
+    
+}
+form button a{
+    background:#ff004f;
+    color:#fff;
+    font-size:22px;
+    margin:20px 0;
+    border-radius:5px;
+    cursor:pointer;
+    border:0;
+    border: none;
+    margin:25px 0;
+     padding:5px 5px;
+     text-decoration:none;
+} 
+
+</style>
+<body>
+<div class="container">
+    <div class="col-1">
+        <ul>
+            <li><h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>RENT & RUN</u></h1></li>
+            <li><i class="fa-sharp fa-solid fa-star"></i>&nbsp;You can upload the clothes from your wardrobe.</li>
+            <li><i class="fa-sharp fa-solid fa-star"></i>&nbsp;You can wear the dress of your choice without owning them.</li>
+            <li><i class="fa-sharp fa-solid fa-star"></i>&nbsp;Special Discounts and Coupons for Subscribed user.</li>
+            <!-- <li><i class="fa-sharp fa-solid fa-star"></i>&nbsp;You can upload your Clothes</li> -->
+        </ul>
+    </div>
+    <div class="col-2">
+      <u><h2 style="font-family:Algerian">Our Plans</h2></u>
+      <form>
+        <label for="Free">
+            <input type="radio" name="plans" id="free">
+            <span>FREE</span> ONE MONTH(For New User)
+        </label>
+        <label for="Paid">
+            <input type="radio" name="plans" id="paid">
+            <span>&#8377;99<small>/month</small></span> ONE MONTH
+        </label>
+        <label for="Paid">
+            <input type="radio" name="plans" id="paid">
+            <span>&#8377;399</span> SIX MONTH
+        </label>
+        <label for="Paid">
+            <input type="radio" name="plans" id="paid">
+            <span>&#8377;599</span> 1 YEAR
+        </label>
+        <br>
+        <b><p>YOUR NAME</p></b>
+        <input type="text" placeholder="Enter your Name" required>
+        <b><p>EMAIL ADDRESS</p></b>
+        <input type="text" placeholder="Enter your Email Id" required><br><br>
+        <button type="submit"><a href="paymentform.html">Subscribe</a></button>
+      </form>
+    </div>
+</div>
+</body>
+</html>
